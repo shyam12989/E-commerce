@@ -1,0 +1,170 @@
+.display_categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.categoryElement {
+    list-style: none;
+    /* Ensure the list has no default styling */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.categoryElement>span{
+    flex: 1 1 21%;
+    margin: 10px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:cadetblue;
+    transition: transform 0.2s;
+    display: inline;
+    padding-top: 91px;
+}
+
+.logo {
+    height: 130px;
+    width: 130px;
+    display: flex;
+    float: left;
+    background-color: bisque;
+}
+
+.header {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 20%;
+    width: 40%;
+}
+
+header {
+    height: 50%;
+    width: 100%;
+    background-color: bisque;
+}
+.buttonStyle {
+    padding-left: 2%;
+}
+.productLists{
+    padding-left: 40%;
+}
+
+section{
+    height: 100%;
+    background-color: green;
+}
+
+.App { display: flex; flex-direction: column; min-height: 100vh; } 
+
+.App-main { padding: 20px; } 
+.App-main { flex: 1;width: 97%; } 
+.App-footer { background-color: #282c34; color: white; text-align: center; width: 100%; }
+
+.jeweleryStyle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.jeweleryStyle>span {
+    flex: 1 1 21%;
+    margin: 10px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: cadetblue;
+    transition: transform 0.2s;
+    display: inline-block;
+    font-size: small;
+    width: 33%;
+    height:200px;
+    align-self: flex-start;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.jeweleryImage{
+    display: flex;
+    float: left;
+    align-items: left;
+    width: 25%;
+    height: fit-content;
+    padding:10px;
+}
+.womensclothImage{
+    display: flex;
+    float: left;
+    align-items: left;
+    width: 22%;
+    height: 30%;
+    padding:10px;
+
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: x-small;
+    text-overflow: ellipsis;
+    position: relative;
+    white-space: wrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.FooterAlignment{
+    text-align: left;
+    color: black;
+}
+
+.electronicStyle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+.electronicStyle>span,.womensclothstyle>span{
+    flex: 1 1 21%;
+    margin: 10px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: cadetblue;
+    transition: transform 0.2s;
+    font-size: small;
+    width: 40%;
+    height: 200px;
+    float: left;
+} 
+.container1{
+    display:flex;
+    float: left;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+}
+.itemCost{
+    display: inline;
+}
+.table th,.table td{
+    text-align: center;
+    border: 2px solid #101010;
+    padding: 8px;
+}
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color:rgb(155, 215, 155);
+}
