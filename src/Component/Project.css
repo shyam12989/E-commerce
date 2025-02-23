@@ -168,3 +168,6 @@ section{
     width: 100%;
     background-color:rgb(155, 215, 155);
 }
+.ListingDetails {
+    cursor: pointer;
+}

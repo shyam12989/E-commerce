@@ -1,20 +1,20 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import useFetch from "./customHook";
 
 function ElectronicProduct(){  
     
-            const [data, setData] = useState([]);
+            //const [data, setData] = useState([]);
             const Navigate=useNavigate();
     
-        useEffect(() => {
+        /*useEffect(() => {
     
             fetch("https://fakestoreapi.com/products/category/electronics")
                 .then(response => response.json())
                 .then(data => setData(data))
                 .catch(error => console.error(error))
-        }, [])
-
+        }, [])*/
+        const [data] = useFetch("https://fakestoreapi.com/products/category/electronics");
         const Navigar=(id)=>{
             Navigate(`/ProductDetails/${id}`)
         }

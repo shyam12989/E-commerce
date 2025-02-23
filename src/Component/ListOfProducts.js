@@ -13,8 +13,8 @@ function ListOfProducts() {
             .catch(error => console.error(error))
     }, [Limit]) 
     
-    const increaseLimit=()=>{
-        setLimit(previousValue=>previousValue+5);    
+    const increaseLimit=(newLimit)=>{
+        setLimit(newLimit);    
 
     }
 
@@ -42,8 +42,14 @@ function ListOfProducts() {
     ));    
     return (
         <>
-            <div style={{paddingLeft:"85%", paddingBottom:"10px"}}>                
-                <button onClick={increaseLimit} style={{padding:"5px"}}> <b>Increase Products</b></button>
+            <div style={{paddingLeft:"70%", paddingBottom:"10px"}}>  
+                <span><b>Increase Product Listing: </b></span>
+                <span className="ListingDetails">
+                    <span onClick={()=>increaseLimit(5)} style={{padding:"5px"}}> <b>1</b></span>
+                    <span onClick={()=>increaseLimit(10)} style={{padding:"5px"}}> <b>2</b></span>
+                    <span onClick={()=>increaseLimit(15)} style={{padding:"5px"}}> <b>3</b></span>
+                    <span onClick={()=>increaseLimit(20)} style={{padding:"5px"}}> <b>4</b></span>
+                </span>
             </div>
             <table className="table">
                 <TableHeaders />

@@ -2,18 +2,19 @@ import { useState, useEffect } from "react";
 import React from "react";
 import "./Project.css";
 import { Link } from "react-router-dom";
-
+import useFetch from "./customHook";
 
 function ProductCategories() {
 
-    const [data, setData] = useState([]);
+    //const [data, setData] = useState([]);
 
-    useEffect(() => {
+    /*useEffect(() => {
         fetch("https://fakestoreapi.com/products/categories")
             .then(response => response.json())
             .then(data => setData(data))
             .catch(error => console.error(error));
-    }, []);
+    }, []);*/
+    const [data] = useFetch("https://fakestoreapi.com/products/categories");
 
     // const categoryElement = [];
 
